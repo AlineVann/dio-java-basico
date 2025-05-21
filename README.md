@@ -1,2 +1,2 @@
-# dio-java-basico
+# coe-code
 repositório para armazenar todo o conteúdo do curso de java
