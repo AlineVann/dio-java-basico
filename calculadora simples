@@ -1,0 +1,91 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMC7tv+i+jcnWE1wmhFWcDD"
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "erNgnp_-FMQL",
+        "outputId": "1e28ef3c-e5c7-459a-e6da-4c7f1825569d"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Escolha a operação:\n",
+            "1 - Adição\n",
+            "2 - Subtração\n",
+            "3 - Multiplicação\n",
+            "4 - Divisão\n",
+            "Digite o número da operação desejada: 4\n",
+            "Digite o primeiro número: 120\n",
+            "Digite o segundo número: 4\n",
+            "Resultado: 120.0 / 4.0 = 30.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "def calcular():\n",
+        "    print(\"Escolha a operação:\")\n",
+        "    print(\"1 - Adição\")\n",
+        "    print(\"2 - Subtração\")\n",
+        "    print(\"3 - Multiplicação\")\n",
+        "    print(\"4 - Divisão\")\n",
+        "\n",
+        "    escolha = input(\"Digite o número da operação desejada: \")\n",
+        "\n",
+        "    num1 = float(input(\"Digite o primeiro número: \"))\n",
+        "    num2 = float(input(\"Digite o segundo número: \"))\n",
+        "\n",
+        "    if escolha == \"1\":\n",
+        "        resultado = num1 + num2\n",
+        "        print(f\"Resultado: {num1} + {num2} = {resultado}\")\n",
+        "    elif escolha == \"2\":\n",
+        "        resultado = num1 - num2\n",
+        "        print(f\"Resultado: {num1} - {num2} = {resultado}\")\n",
+        "    elif escolha == \"3\":\n",
+        "        resultado = num1 * num2\n",
+        "        print(f\"Resultado: {num1} * {num2} = {resultado}\")\n",
+        "    elif escolha == \"4\":\n",
+        "        if num2 == 0:\n",
+        "            print(\"Erro: Divisão por zero não é permitida.\")\n",
+        "        else:\n",
+        "            resultado = num1 / num2\n",
+        "            print(f\"Resultado: {num1} / {num2} = {resultado}\")\n",
+        "    else:\n",
+        "        print(\"Opção inválida! Tente novamente.\")\n",
+        "\n",
+        "calcular()\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "Dkcvp0iyJa8q"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
